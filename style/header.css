@@ -1,0 +1,58 @@
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/header/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+.container__imagem{
+    padding:1em;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top:100%;
+    width: 60vw;
+}
+
+/* Se o container botao tiver checked, ele vai procurar outro que venha depois dele que tenha a classe menu
+ e vai colocar o comando nele, se não tivesse nenhum nome de classe correspondente, nada iria acontecer*/
+
+ .container__botao:checked~.lista-menu{
+    display: block;
+
+}
+.lista-menu__titulo, .lista-menu__item{
+    padding:1em;
+    background-color: var(--branco);
+    
+}
+.lista-menu__link{
+    text-decoration: none;
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+.container__botao{
+    display: none;
+}
