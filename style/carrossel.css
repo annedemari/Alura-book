@@ -26,11 +26,17 @@
 .card__botoes{
     display: flex;
     justify-content:space-between;
+    gap: 60%;
+    align-items: center;
+    
   
 }
 .botoes{
     display:flex;
     justify-content: space-between;
+    list-style: none;
+    align-items:center;
+    gap: 12px;
 }
 
 .card{
@@ -39,6 +45,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin:0.9em;
     padding: 1em;
+    
 }
 .descricao__titulo{
     color: var(--laranja);
@@ -61,5 +68,10 @@
 }
 .botoes__ancora{
     background-color: var(--laranja);
-    padding: 14px;
+    padding: 1em 2.2em;
+    white-space: nowrap;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+
 }
