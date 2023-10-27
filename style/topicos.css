@@ -13,7 +13,7 @@
 .topicos__lista{
     display: flex;
     flex-wrap: wrap;
-    /* quabra a linha quando chega no fim da tela*/
+    /* quebra a linha quando chega no fim da tela*/
     justify-content: center;
     list-style: none;
 
